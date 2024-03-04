@@ -48,5 +48,5 @@ File "/tmp/1/1.py", line 1
                  ^
 SyntaxError: invalid decimal literal
 ```
-tried changing the syntax but the smae error continued   
+tried changing the syntax but the same error continued   
 so went back to reading python syntax to see if i made any mistakes
