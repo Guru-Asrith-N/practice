@@ -92,7 +92,7 @@ realised that the challenge didn't have OAEP padding since the challenge name is
 searched no padding vulnerabilities and found that you can send data and observe the results leading to loss of confidentiality   
 tried searching how this can be used  
 didn't get anything   
-read writeups `https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/No_Padding_No_Problem.md `
+read writeups https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/No_Padding_No_Problem.md   
 found that unpadded RSA is homomorphic which means that it is possible to use operations on encrypted text directly without having to decrypt it  
 so we can make encrypt 2 numbers individually and multiply them and get the same value as multiplying them and encrypting them  
 by assuming one of the numbers as 2 and solving for getting m  we can get the decrypted text   
