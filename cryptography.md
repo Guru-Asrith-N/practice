@@ -68,5 +68,36 @@ opened the challenge
 connected to given port   
 showed 
 ```
+Welcome to the Padding Oracle Challenge
+This oracle will take anything you give it and decrypt using RSA. It will not accept the ciphertext with the secret message... Good Luck!
 
+
+n: 89069710841345853795772415309332012744575923744891171364171461800906667485153976314005224040328628152113894525261595709590938239427547522715759086193724129801642829315222288876639794266842655868837371340503722755387394597421081009403637374071777134992116599910372688011836802145204549915901174273329846204461
+e: 65537
+ciphertext: 40289183432265489491614697329610309753393559176784529956382745761068315983647722307703431535241216208548736771202383748081804882337881600002523517717556929353788739917629769063611134521500588346569398019325273309046802243285552101681889039858439959196781300607085645950667465503838404187081396112989563114817
+
+
+Give me ciphertext to decrypt:
+```
+
+tried entering the same ciphertext but it didnt decode it  
+tried entering different numbers and it decoded it  
+tried checking what padding was  
+found that you add additional bits to meet a certain number of bits for the operations to work  
+searched what an oracle was  
+found that it is tool that performs random mathematical operations and gives a fixed response   
+while reading it found that OAEP(optimal assymetric encryption padding) was used along with RSA  
+read about OAEP  
+realised that the challenge didn't have OAEP padding since the challenge name is no padding  
+searched no padding vulnerabilities and found that you can send data and observe the results leading to loss of confidentiality   
+tried searching how this can be used  
+didn't get anything   
+read writeups `https://github.com/Dvd848/CTFs/blob/master/2021_picoCTF/No_Padding_No_Problem.md `
+found that unpadded RSA is homomorphic which means that it is possible to use operations on encrypted text directly without having to decrypt it  
+so we can make encrypt 2 numbers individually and multiply them and get the same value as multiplying them and encrypting them  
+by assuming one of the numbers as 2 and solving for getting m  we can get the decrypted text   
+converting the message to text we get the flag    
+
+```
+Flag - picoCTF{m4yb3_Th0se_m3s54g3s_4r3_difurrent_4005534}
 ```
