@@ -51,6 +51,44 @@ SyntaxError: invalid decimal literal
 tried changing the syntax but the same error continued   
 so went back to reading python syntax to see if i made any mistakes
 
+-----------------------------
+made a mistake   
+had to put the hex numbers within single quotes and make it into string then it runs  
+```
+Flag - crypto{You_will_be_working_with_dh_hex_strings_a_lot}
+```
+
+#### Base64 
+
+entered the following code  
+```
+import base64 
+
+a='72bca9b68fc16ac7beeb8f849dca1d8a783e8acf9679bf9269f7bf'
+b=bytes.fromhex(a)
+c= base64.b64encode(b)
+print (c)
+```
+
+```
+Flag -crypto/Base+64+Encoding+is+Web+Safe/
+```
+
+#### Bytes and big integers 
+
+entered the following code 
+```
+from Crypto.Util.number import *
+
+a=11515195063862318899931685488813747395775516287289682636499965282714637259206259206269
+b=long_to_bytes(a)
+print (b)
+```
+long_to_bytes and bytes_to_long don't work for strings   
+```
+Flag - crypto{3nc0d1n6_4ll_7h3_w4y_d0wn}
+```
+
 
 ## picoCTF  
 
