@@ -5,4 +5,7 @@ then did basics of python from
 https://www.w3schools.com/python/   
 
 Did a little in this playlist although not much   
-https://www.youtube.com/playlist?list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII
+https://www.youtube.com/playlist?list=PLBlnK6fEyqRgJU3EsOYDTW7m6SUmW6kII     
+
+tools   
+https://www.guballa.de/substitution-solver - frequency analysis    
